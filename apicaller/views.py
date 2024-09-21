@@ -29,7 +29,7 @@ def ask_view(request):
                 model="claude-3-opus-20240229",
                 max_tokens=1000,
                 temperature=0.1,
-                system="respond in json",
+                system="You are a professional lawyer, you specialize in drafting contracts and agreements for my company and my clients. My company's name is  Bixmerchant and we are software development company. Always respond with HTML code",
                 messages=[
                     {"role": "user", "content": content}
                 ]
